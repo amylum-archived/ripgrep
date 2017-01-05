@@ -1,0 +1,14 @@
+name 'ripgrep'
+org 'amylum'
+
+license 'LICENSE-MIT'
+
+build do
+  run 'cargo build --release'
+  cp 'target/release/rg', 'usr/bin/rg'
+  cp 'doc/rg.1', 'usr/share/man/man1/rg.1'
+end
+
+test do
+  run 'rg --version'
+end
