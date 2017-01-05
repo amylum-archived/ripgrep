@@ -1,7 +1,7 @@
 name 'ripgrep'
 org 'amylum'
 
-license 'LICENSE-MIT'
+license ['LICENSE-MIT', 'UNLICENSE']
 
 build do
   run 'cargo build --release'
