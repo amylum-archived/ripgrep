@@ -8,6 +8,7 @@ item do
   expected do
     github_release
     repo 'BurntSushi/ripgrep'
+    filter /^[\d.]+$/
   end
 
   actual do
