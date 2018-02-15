@@ -6,7 +6,10 @@ license ['LICENSE-MIT', 'UNLICENSE']
 build do
   run 'cargo build --release'
   cp 'target/release/rg', 'usr/bin/rg'
-  cp 'doc/rg.1', 'usr/share/man/man1/rg.1'
+  build_dir = @forge.tmpdir(:build)
+  glob = "#{build_dir}/target/release/build/ripgrep-*/out"
+  man = File.join(Dir.glob(glob).first.split('/')[-5..-1], 'rg.1')
+  cp man, 'usr/share/man/man1/rg.1'
 end
 
 test do
