@@ -1,7 +1,7 @@
 ripgrep
 =========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/ripgrep/master.svg)](https://circleci.com/gh/amylum/ripgrep)
+[![Build Status](https://img.shields.io/travis/com/amylum/ripgrep.svg)](https://travis-ci.com/amylum/ripgrep)
 [![GitHub release](https://img.shields.io/github/release/amylum/ripgrep.svg)](https://github.com/amylum/ripgrep/releases)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
